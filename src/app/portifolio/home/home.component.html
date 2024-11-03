@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+<div class="home">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my projects and skills</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in both frontend and backend technologies. I love creating beautiful and functional web applications.</p>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <p>React - A JavaScript library for building user interfaces.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <p>Next.js - A React framework for server-rendered applications.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Flutter - A UI toolkit for building natively compiled applications for mobile, web, and desktop.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-angular"></i>
+                    <p>Angular - A platform for building mobile and desktop web applications.</p>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>MongoDB - A document-oriented NoSQL database.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-fire"></i>
+                    <p>Firebase - A platform developed by Google for creating mobile and web applications.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL - An open-source relational database management system.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-leaf"></i>
+                    <p>Spring Boot - A framework for building production-ready Spring applications.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <p>Node.js - A JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <a [href]="'mailto:' + email">Email: {{ email }}</a>
+        <p>Phone: +123 456 7890</p>
+    </section>
+</div>
+<app-footer></app-footer>
