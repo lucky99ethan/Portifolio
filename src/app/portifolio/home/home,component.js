@@ -38,6 +38,13 @@ export default StyleSheet.create({
   'hero btn:hover': {
     'backgroundColor': '#e91e63'
   },
+  'profile-image': {
+    'marginTop': [{ 'unit': 'px', 'value': 20 }],
+    'borderRadius': '50%',
+    'width': [{ 'unit': 'px', 'value': 150 }],
+    'height': [{ 'unit': 'px', 'value': 150 }],
+    'objectFit': 'cover'
+  },
   'about': {
     'padding': [{ 'unit': 'px', 'value': 80 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 80 }, { 'unit': 'px', 'value': 20 }],
     'textAlign': 'center'
