@@ -16,6 +16,11 @@ body {
     align-items: center;
     background-color: #333;
     padding: 1rem 2rem;
+    cursor: pointer;
+}
+.navbar a{
+    color: #feca57;
+
 }
 
 .logo a {
@@ -43,5 +48,5 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ff6347; /* Tomato color for hover effect */
+    color: #feca57; /* Tomato color for hover effect */
 }

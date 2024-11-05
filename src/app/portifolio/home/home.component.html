@@ -2,79 +2,114 @@
 <div class="home">
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my projects and skills</p>
-            <a href="#projects" class="btn">View Projects</a>
-            <img src="../../../assets/Mine.jpg" alt="My Image" class="profile-image"/>
+            <div class="container">
+            <div class="text-content">
+                <p class="intro">Hi</p>
+                <h1>I'm<span class="name">Moses</span></h1>
+                <h1>a Fullstack Developer</h1>
+                <p class="description">I'm a dedicated full-stack developer with a passion for building efficient and user-friendly web applications. Skilled in both frontend and backend technologies, I strive to bring creative ideas to life through code.</p>
+
+            </div>
+            <div class="button">
+                <button class="btn">View Projects</button>
+                <button class="hire">Hire Me</button>
+            </div>
+            </div>
+            <div class="image-content">
+                <img src="../../../assets/Mine.jpg" alt="My Image" class="profile-image"/>
+            </div>
+
         </div>
+  
     </section>
     
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer with experience in both frontend and backend technologies. I love creating beautiful and functional web applications.</p>
+        <div class="container">
+            <div class="column">
+                <h1>Moses Mbaraka Massawe</h1>
+                <p>I'm a dedicated full-stack developer with a passion for building efficient and user-friendly web applications. Skilled in both frontend and backend technologies, I strive to bring creative ideas to life through code.</p>
+                <div>
+                    <div class="communicate">
+                        <div><img src="../../../assets/home.png" alt="phone" class="phone"/></div>
+                        <div class="maneno">Tanzania, Dar es Salaam</div>
+                    </div>
+                    <div class="communicate">
+                        <div><img src="../../../assets/telephone 2.png" alt="phone" class="phone"/></div>
+                        <div class="maneno">+255677927107, +255692680134</div>
+                    </div>
+                    <div class="communicate">
+                        <div><img src="../../../assets/email.png" alt="email" class="email"/></div>
+                        <div class="maneno">Email: {{ email }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img src="../../../assets/Mine.jpg" alt="My Image" class="about-image"/>
+            </div>
+            <div class="column">
+                <h1>My Professional Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <input type="checkbox" id="frontend-toggle" class="toggle">
+                        <label for="frontend-toggle" class="toggle-label">
+                            <h3>Frontend</h3>
+                        </label>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <p>React - A JavaScript library for building user interfaces.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <p>Next.js - A React framework for server-rendered applications.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Flutter - A UI toolkit for building natively compiled applications for mobile, web, and desktop.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-angular"></i>
+                                <p>Angular - A platform for building mobile and desktop web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <input type="checkbox" id="backend-toggle" class="toggle">
+                        <label for="backend-toggle" class="toggle-label">
+                            <h3>Backend</h3>
+                        </label>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <p>MongoDB - A document-oriented NoSQL database.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire"></i>
+                                <p>Firebase - A platform developed by Google for creating mobile and web applications.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <p>MySQL - An open-source relational database management system.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <p>Spring Boot - A framework for building production-ready Spring applications.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <p>Node.js - A JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section class="skills" id="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <p>React - A JavaScript library for building user interfaces.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <p>Next.js - A React framework for server-rendered applications.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Flutter - A UI toolkit for building natively compiled applications for mobile, web, and desktop.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-angular"></i>
-                    <p>Angular - A platform for building mobile and desktop web applications.</p>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <p>MongoDB - A document-oriented NoSQL database.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-fire"></i>
-                    <p>Firebase - A platform developed by Google for creating mobile and web applications.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <p>MySQL - An open-source relational database management system.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-leaf"></i>
-                    <p>Spring Boot - A framework for building production-ready Spring applications.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-node-js"></i>
-                    <p>Node.js - A JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Short description of the project.</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Short description of the project.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
+        
     </section>
     
     <section class="contact" id="contact">
