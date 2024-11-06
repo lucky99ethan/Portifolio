@@ -16,10 +16,16 @@ onHome(){
   this.router.navigate(['./portifolio/home']);
 }
 onAbout(){
-  this.router.navigate(['./portifolio/about']);
+  const about = document.getElementById('about');
+  if(about){
+    about.scrollIntoView({behavior: 'smooth'});
+  }
 }
 onContact(){
-  this.router.navigate(['./portifolio/contact']);
+  const contact = document.getElementById('contact');
+  if(contact){
+    contact.scrollIntoView({behavior: 'smooth'});
+  }
 }
 onServices(){
   this.router.navigate(['./portifolio/service']);

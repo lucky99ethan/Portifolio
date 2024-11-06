@@ -36,11 +36,22 @@
                     </div>
                     <div class="communicate">
                         <div><img src="../../../assets/telephone 2.png" alt="phone" class="phone"/></div>
-                        <div class="maneno">+255677927107, +255692680134</div>
+                        <div class="maneno">
+                            <a href="tel:+255677927107" class="contact-link">+255677927107</a>, 
+                            <a href="tel:+255692680134" class="contact-link">+255692680134</a>
+                        </div>
                     </div>
                     <div class="communicate">
                         <div><img src="../../../assets/email.png" alt="email" class="email"/></div>
-                        <div class="maneno">Email: {{ email }}</div>
+                        <div class="maneno">
+                            <a href="mailto:{{ email }}" class="contact-link">{{ email }}</a>
+                        </div>
+                    </div>
+                    <div class="communicate">
+                        <div><img src="../../../assets/github_logo.png" alt="github" class="github"/></div>
+                        <div class="maneno">
+                            <a href="https://github.com/lucky99ethan" target="_blank" class="contact-link">lucky99ethan</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,15 +118,64 @@
         </div>
     </section>
     
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        
-    </section>
-    
+ 
     <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <a [href]="'mailto:' + email">Email: {{ email }}</a>
-        <p>Phone: +123 456 7890</p>
+        <h2>Contact Me</h2>
+        <div class="container">
+            <div>
+                <div class="header">
+                    <h1>Let's talk</h1>
+                    <div class="paragraph">
+                        <p>Questions, comments or Suggestions</p>
+                        <p>Simply fill in the form and i will be in touch shortly</p>
+                    </div>
+                </div>
+                <div class="call">
+                    <p>Give me a ring</p>
+                    <div class="phones">
+                        <img src="../../../assets/telephone 2.png" alt="phone" class="phone"/>
+                        <a href="tel:+255677927107" class="contact-link">+255677927107</a>
+                    </div>
+                </div>
+                <div class="email-section">
+                    <p>Give me an email</p>
+                    <div class="email">
+                        <img src="../../../assets/email.png" alt="email" class="email-icon"/>
+                        <a href="mailto:{{ email }}" class="contact-link">{{ email }}</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">What can I help you with?</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
     </section>
+
 </div>
 <app-footer></app-footer>
